@@ -1,0 +1,40 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../paper-listbox/paper-listbox.html">
+<link rel="import" href="../paper-input/paper-input.html">
+
+<dom-module id="micro-comp">
+
+
+  <template>
+
+    <style>
+      /* local DOM styles go here */
+      :host {
+        display: inline-block;
+      }
+    </style>
+
+    <!-- local DOM goes here -->
+    	                             <!-- TODO MICROCATEGORIA -->
+	<paper-dropdown-menu label="2- Scegli una micro categoria">
+        <paper-listbox class="dropdown-content" selected="1">
+            <paper-item>Cucina</paper-item>
+            <paper-item>VattelaApesca</paper-item>
+            <paper-item>Nonloso</paper-item>
+            <paper-item>Riparazione</paper-item>
+        </paper-listbox>
+   </paper-dropdown-menu>
+   <paper-input label="2- Descrizione Micro" always-float-label></paper-input>
+  </template>
+
+  <script>
+  Polymer({
+    is: 'micro-comp.
+    ',
+  });
+  </script>
+
+</dom-module>
+

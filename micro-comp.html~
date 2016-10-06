@@ -13,12 +13,22 @@
       /* local DOM styles go here */
       :host {
         display: inline-block;
+        paper-dropdown-menu{
+            width:100%;        
+        
+        }
+        paper-listbox{
+            width:100%;        
+        }
+        paper-input{
+            width:100%;        
+        }
       }
     </style>
 
     <!-- local DOM goes here -->
     	                             <!-- TODO MICROCATEGORIA -->
-	<paper-dropdown-menu label="2- Scegli una micro categoria">
+	<paper-dropdown-menu label="Scegli una micro categoria">
         <paper-listbox class="dropdown-content" selected="1">
             <paper-item>Cucina</paper-item>
             <paper-item>VattelaApesca</paper-item>
@@ -26,13 +36,12 @@
             <paper-item>Riparazione</paper-item>
         </paper-listbox>
    </paper-dropdown-menu>
-   <paper-input label="2- Descrizione Micro" always-float-label></paper-input>
+   <paper-input label="Descrizione Micro" always-float-label></paper-input>
   </template>
 
   <script>
   Polymer({
-    is: 'micro-comp.
-    ',
+    is: 'micro-comp',
   });
   </script>
 

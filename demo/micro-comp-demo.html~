@@ -13,7 +13,7 @@
   
     <h3>Statically-configured icon-toggles</h3>
     
-    <micro-comp ></micro-comp>
+    <micro-comp toggle-icon="star"></micro-comp>
     
     <h3>Data-bound icon-toggle</h3>
 

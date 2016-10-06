@@ -1,7 +1,7 @@
 {
-  "name": "icon-toggle",
-  "version": "0.0.0",
-  "homepage": "https://github.com/Polymer/element-tutorial",
+  "name": "micro-comp",
+  "version": "1.0.0",
+  "homepage": "https://github.com/faan11/microcategory",
   "license": "MIT",
   "ignore": [
     "**/.*",

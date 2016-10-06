@@ -13,10 +13,12 @@
       /* local DOM styles go here */
       :host {
         display: inline-block;
-        paper-dropdown-menu{
-            width:100%;        
         
-        }
+        paper-dropdown-menu{
+        --paper-dropdown-menu: {
+          width: 100%;
+        };
+      }
         paper-listbox{
             width:100%;        
         }

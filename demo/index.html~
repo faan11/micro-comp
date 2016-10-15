@@ -8,9 +8,9 @@
       window.Polymer.dom = 'shadow';
       */
     </script>
-    <link rel="import" href="micro-comp-demo.html">
+    <link rel="import" href="paper-feed-demo.html">
   </head>
   <body>
-    <icon-toggle-demo></icon-toggle-demo>
+    <paper-feed-demo></paper-feed-demo>
   </body>
 </html>

@@ -1,9 +1,9 @@
 <link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../../iron-icons/iron-icons.html">
-<link rel="import" href="../micro-comp.html">
+<link rel="import" href="../paper-feed.html">
 
 
-<dom-module id="micro-comp-demo">
+<dom-module id="paper-feed-demo">
   <template>
     <style>
       :host {
@@ -13,10 +13,7 @@
   
     <h3>Statically-configured icon-toggles</h3>
     
-    <micro-comp ></micro-comp>
-    
-    <h3>Data-bound icon-toggle</h3>
-
+    <paper-feed message-title="Sasha grey" message-text="se so bella!" message-count="1" profile-img="../images/paper_default_picture.jpg" feed-image="../images/paper_default_img.jpg" share-img="../images/share.svg"></paper-feed>
     <!-- use a computed binding to generate the message -->
     <div><span>[[message(isFav)]]</span></div>
 
@@ -24,7 +21,7 @@
   
   <script>
     Polymer({
-      is: "micro-comp-demo",
+      is: "paper-feed-demo",
       
     });
   </script>

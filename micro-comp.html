@@ -13,17 +13,17 @@
       /* local DOM styles go here */
       :host {
         display: inline-block;
-        
+
         paper-dropdown-menu{
         --paper-dropdown-menu: {
           width: 100%;
         };
         }
         paper-listbox{
-            width:100%;        
+            width:100%;
         }
         paper-input{
-            width:100%;        
+            width:100%;
         }
       }
     </style>
@@ -32,20 +32,30 @@
     	                             <!-- TODO MICROCATEGORIA -->
 	<paper-dropdown-menu label="Scegli una micro categoria">
         <paper-listbox class="dropdown-content" selected="1">
-            <paper-item>Cucina</paper-item>
-            <paper-item>VattelaApesca</paper-item>
-            <paper-item>Nonloso</paper-item>
-            <paper-item>Riparazione</paper-item>
+                      <template is="dom-repeat" items="{{data}}" as="item">
+                        <paper-item value="[[item._id]]" >[[item.nome]]</paper-item>
+                      </template>
+
         </paper-listbox>
    </paper-dropdown-menu>
    <paper-input label="Descrizione Micro" always-float-label></paper-input>
+   <iron-ajax
+        auto
+        url="https://mhauser.herokuapp.com/micro/getbymacro?idMacro=580ba919730f1806753fc009"
+        handle-as="json"
+        last-response="{{data}}"></iron-ajax>
   </template>
 
   <script>
   Polymer({
     is: 'micro-comp',
+    properties: {
+      idMacro:{
+        type:String,
+        value:null,
+      },
+    },
   });
   </script>
 
 </dom-module>
-

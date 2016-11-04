@@ -30,7 +30,7 @@
 
     <!-- local DOM goes here -->
     	                             <!-- TODO MICROCATEGORIA -->
-	<paper-dropdown-menu label="Scegli una micro categoria">
+	<paper-dropdown-menu label="Scegli una micro categoria" name="micro">
         <paper-listbox class="dropdown-content" selected="1">
                       <template is="dom-repeat" items="{{data}}" as="item">
                         <paper-item value="[[item._id]]" >[[item.nome]]</paper-item>
